@@ -18,7 +18,28 @@ The Vehicle Rental System is a simple Java console application that allows users
     ```sh
     java VehicleRental.java
     ```
+## Features
+- Implements **Abstraction**, **Inheritance**, and **Polymorphism**.
+- **Exception Handling**: Prevents invalid user input.
+- **Multithreading**: Simulates reservation processing.
+
+## How It Works
+1. User selects a vehicle.
+2. User enters the number of rental days.
+3. Reservation is processed in a separate thread to simulate processing time.
+
+## Exception Handling
+- Handles invalid vehicle selection.
+- Handles non-numeric inputs for days selection.
+
+## Multithreading
+- The `Reservation` class implements `Runnable`.
+- A separate thread handles reservation processing (`Thread.sleep(2000)`).
+
 ## Output
 ![VehicleRental](output/1.png)
+
 ![VehicleRental](output/2.png)
-![VehicleRental](image.png)
+
+![VehicleRental](output/image.png)
+
